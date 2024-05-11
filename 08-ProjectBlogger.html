@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://kit.fontawesome.com/fba70c7bca.js" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Marcellus SC:700|Marcellus SC:400');
+
+    :root {
+        --text: hsl(0, 0%, 100%);
+        --background: hsl(0, 0%, 2%);
+        --primary: hsl(32, 53%, 29%);
+        --secondary: hsl(45, 44%, 60%);
+        --accent: hsl(18, 66%, 20%);
+        --font-family: 'Knewave', cursive;
+        --paragraph: hsl(53%, 98%, 74%);
+    }
+
+    body {
+        display: flex;
+        background-image: url(2.jpeg);
+        background-size: cover;
+        /* background-color: var(--secondary); */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .layout {
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 20px 0px 20px;
+        justify-content: flex-start;
+    }
+
+    .search-box {
+        padding: 20px;
+        background-color: white;
+        color: #111;
+        font-size: 25px;
+        font-family: var(--font-family);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        flex-grow: 1;
+        border: 1px solid;
+        box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+    }
+
+    .search-box:active {
+        border: 1px solid;
+        box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+
+    }
+
+    .nav:hover {
+        background: var(--accent);
+        box-shadow: 0 0 5px var(--accent);
+    }
+
+    .col-1 {
+        flex: 1;
+        background-color: var(--background);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    .col-2 {
+        flex: 4;
+        /* background-color: var(--secondary); */
+        display: flex;
+        flex-direction: column;
+        /* padding: 10px; */
+        padding: 5px 0px 0px 0px;
+        /* border: 1px solid; */
+    }
+
+    .icon-container {
+        display: flex;
+        background-color: var(--secondary);
+        text-align: left;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: 3px 1px 0px 2px, 0px -1px 0px 2px rgba(0, 0, 0, 0.62);
+        padding: 10px 20px 10px 20px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .item {
+        text-align: left;
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    .icon-container:hover {
+        background: var(--secondary);
+        box-shadow: 0 0 5px var(--secondary),
+            0 0 200px var(--secondary);
+        transform: translate(0px, -10px);
+
+    }
+
+    .content {
+        /* padding: 20px 20px 50px 20px; */
+        margin: 20px 20px 0px 20px;
+        /* overflow-y: scroll; */
+        /* background-image: url(2.jpeg); */
+        /* background-color: var(); */
+        background-size: cover;
+    }
+
+    .content-text {
+        /* background-image: url(2.jpeg); */
+        /* background-size: cover; */
+        /* flex-grow: 1; */
+        /* border: 1px solid; */
+        font-family: var(--font-family);
+        font-size: 20px;
+        padding: 00px 00px 0px 5px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        /*! Dont set height for flex container, it will shrink the child components */
+        /* height: 300px; */
+        justify-content: flex-start;
+        margin-bottom: 50px;
+        /* border: 1px solid var(--text); */
+    }
+
+    .profile-image {
+        /* padding: 50px; */
+        margin: 50px;
+    }
+
+    .profile-image a img {
+        width: 100%;
+        clip-path: circle();
+    }
+
+    .full-name {
+        font-family: var(--font-family);
+        color: var(--text);
+        font-size: 30px;
+        font-weight: 300;
+        text-align: center;
+        /* border: 1px solid var(--text); */
+        margin-bottom: 20px;
+
+    }
+
+    .short-introduction {
+        font-family: var(--font-family);
+        color: var(--text);
+        font-size: 15px;
+        text-align: justify;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="layout">
+        <div class="col-1">
+            <div class="profile">
+                <div class="profile-image">
+                    <a href="">
+                        <img src="2.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="full-name">
+                    Nguyen Quang Binh
+                </div>
+                <div class="short-introduction">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quod earum saepe in quaerat
+                    perferendis sit, ducimus neque! Eligendi ea qui itaque sit dolorem nesciunt cumque accusantium
+                    beatae eius esse!
+                </div>
+            </div>
+            <div class="icon-container">
+                <i class="item fa fa-home" aria-hidden="true"></i>
+                <p class="item ">Home</p>
+            </div>
+            <div class="icon-container">
+                <i class="item fa fa-home" aria-hidden="true"></i>
+                <p class="item ">Home</p>
+            </div>
+            <div class="icon-container">
+                <i class="item fa fa-home" aria-hidden="true"></i>
+                <p class="item ">Home</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="nav-bar">
+                <input class="search-box" type="text" required placeholder="Search ...">
+            </div>
+            <div class="content">
+                <div class="content-text">
+                    <h1>
+                        The tale of legendary hero
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, inventore dolore mollitia
+                        nobis
+                        nihil laboriosam repellat omnis fuga, nisi, assumenda quas impedit maiores possimus vero
+                        sapiente
+                        ut. Ut, tenetur labore.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
